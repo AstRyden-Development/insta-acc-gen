@@ -15,7 +15,7 @@ accNo = int(input("No of Accounts: "))
 
 print("Requesting Proxies:")
 
-req_proxy = RequestProxy()
+req_proxy = RequestProxy({'http': 'http://free-proxy-list.net'})
 proxies = req_proxy.get_proxy_list()
 maxNum = len(proxies)
 print("\n \n Max No of Proxies:" + str(maxNum) + "\n \n")
